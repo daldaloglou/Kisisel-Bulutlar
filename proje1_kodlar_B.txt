@@ -1,0 +1,8 @@
+sudo apt-get install ntfs-3g
+sudo mkdir /media/ownclouddrive
+id -g www-data
+id -u www-data
+ls -l /dev/disk/by-uuid
+sudo nano /etc/fstab
+UUID=EA7C-204D /media/ownclouddrive auto nofail,uid=33,gid=33,umask=0027,dmask=0027,noatime 0 0
+reboot
