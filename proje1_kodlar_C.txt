@@ -1,0 +1,6 @@
+sudo nano /etc/nginx/sites-available/default
+sudo nano /var/www/owncloud/config/config.php
+$1 => 'xxx.xxx.xxx.xxx' 
+$'overwrite.cli.url' => 'https://xxx.xxx.xxx.xxx'
+sudo service nginx restart
+reboot
